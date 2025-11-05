@@ -1,16 +1,16 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Navbar from './componen/Nav';
-import Home from './peges/Homee';
+import Home from './pages/Homee';
+import Routing from './componen/Routing';
 
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
+      <Routing />
     </BrowserRouter>
   );
 }
